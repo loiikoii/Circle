@@ -35,15 +35,15 @@ namespace Circle
 
         public void PrintOne()
         {
-            Console.WriteLine($"Cirkeln har en area av {Area}cm²");
+            Console.WriteLine($"Cirkeln med radien av {Radius}cm har en area av {Area} cm²");
         }
         public void PrintTwo()
         {
-            Console.WriteLine($"Cirkeln har en omkrets av {Circumference}cm");
+            Console.WriteLine($"Cirkeln har en omkrets av {Circumference} cm");
         }
         public void PrintThree()
         {
-            Console.WriteLine($"Klotet har en volym på {Volume}cm³");
+            Console.WriteLine($"Klotet har en volym på {Volume} cm³");
         }
     }
 }

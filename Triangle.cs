@@ -24,7 +24,7 @@ namespace Circle
         }
         public void TPrintOne()
         {
-            Console.WriteLine(TArea);
+            Console.WriteLine($"Din triangel har en area av {TArea} cm³");
         }
     }
 }
