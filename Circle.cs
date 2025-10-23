@@ -15,7 +15,7 @@ namespace Circle
 
         public Circle(double radius)
         {
-            this.Radius = radius;
+            Radius = radius;
         }
         public double GetArea()
         {
@@ -35,15 +35,15 @@ namespace Circle
 
         public void PrintOne()
         {
-            Console.WriteLine(Area);
+            Console.WriteLine($"Cirkeln har en area av {Area}cm²");
         }
         public void PrintTwo()
         {
-            Console.WriteLine(Circumference);
+            Console.WriteLine($"Cirkeln har en omkrets av {Circumference}cm");
         }
         public void PrintThree()
         {
-            Console.WriteLine(Volume);
+            Console.WriteLine($"Klotet har en volym på {Volume}cm³");
         }
     }
 }

@@ -12,10 +12,10 @@ namespace Circle
         public double Height;
         public double TArea;
 
-        public Triangle(double _base, double _height)
+        public Triangle(double _base, double height)
         {
             Base = _base;
-            Height = _height;
+            Height = height;
         }
         public double GetArea()
         {

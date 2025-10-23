@@ -4,31 +4,40 @@
     {
         static void Main(string[] args)
         {
+            int choice = 0;
+            while (choice != 5)
+            {
             Console.WriteLine("Vad vill du göra? \n" +
-                "1. Räkna ut radie på cirkel.\n" +
+                "1. Räkna ut radie på cirkel\n" +
                 "2. Räkna ut omkrets på cirkel\n" +
                 "3. Räkna ut volym på klot\n" +
-                "4. Räkna ut Area på triangel\n");
-            if (int.TryParse(Console.ReadLine(), out int choice))
-            {
-                switch (choice)
+                "4. Räkna ut Area på triangel\n" +
+                "5. Avsluta");
+
+                if (int.TryParse(Console.ReadLine(), out choice))
                 {
-                    case 1:
-                        COne();
-                        break;
-                    case 2:
-                        CTwo();
-                        break;
-                    case 3:
-                        SphOne();
-                        break;
-                    case 4:
-                        Triangle();
-                        break;
+                    switch (choice)
+                    {
+                        case 1:
+                            COne();
+                            Console.ReadLine();
+                            break;
 
-
-
-
+                        case 2:
+                            CTwo();
+                            Console.ReadLine();
+                            break;
+                        case 3:
+                            SphOne();
+                            Console.ReadLine();
+                            break;
+                        case 4:
+                            Triangle();
+                            Console.ReadLine();
+                            break;
+                        case 5:
+                            break;
+                    }
                 }
             }
         }
@@ -46,8 +55,10 @@
         }
         static void CTwo()
         {
+            Console.WriteLine("Skriv in cirkelns radie");
             if (int.TryParse(Console.ReadLine(), out int radius))
             {
+
                 Circle circle3 = new Circle(radius);
                 circle3.GetCircumference();
                 circle3.PrintTwo();
@@ -55,6 +66,7 @@
         }
         static void SphOne()
         {
+            Console.WriteLine("Skriv in radien av klotet.");
             if (int.TryParse(Console.ReadLine(), out int radius))
             {
                 Circle circle4 = new Circle(radius);
